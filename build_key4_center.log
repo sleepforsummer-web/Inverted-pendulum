@@ -1,0 +1,90 @@
+*** GOWIN Tcl Command Line Console  *** 
+Open project F:/QQ/pid_test_project/swing_up_shortest_recovery/pid_trial.gprj finished
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\uart_target_rx.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\serial_position.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\disturbance_limit.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\auto_recover.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\shortest_recovery.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\key_press.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\move90.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\sine_motion.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\swing_up.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\PID.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\adc_v2.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\encoder.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\motor_pwm.v'
+Analyzing Verilog file 'F:\QQ\pid_test_project\swing_up_shortest_recovery\src\pid_trial.v'
+Compiling module 'pid_trial'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\pid_trial.v":1)
+Compiling module 'swing_up(CENTER_ADC=12'b011110111100,CAPTURE_RANGE=12'b000011111010,SAMPLE_PERIOD_MS=20,PULSE_DUTY=17'sb00000001000100110,LEFT_FIRST_POSITIVE=0,START_KICK_DUTY=17'sb00000001010111100,START_KICK_MS=200,START_BOTTOM_LOW=12'b000001100100,START_BOTTOM_HIGH=12'b111110010110)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\swing_up.v":4)
+Compiling module 'shortest_recovery'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\shortest_recovery.v":3)
+WARN  (EX3791) : Expression size 35 truncated to fit in target size 34("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\shortest_recovery.v":25)
+Compiling module 'auto_recover(SPEED_MAX=16'sb0000000000000110)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\auto_recover.v":3)
+Compiling module 'encoder_decoder'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\encoder.v":3)
+Compiling module 'key_press'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\key_press.v":3)
+Compiling module 'key_short_long'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\key_press.v":29)
+Compiling module 'uart_target_rx'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\uart_target_rx.v":4)
+Compiling module 'serial_position'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\serial_position.v":2)
+WARN  (EX3791) : Expression size 21 truncated to fit in target size 9("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\serial_position.v":36)
+Compiling module 'move90(USE_DIRECTION=1,USE_LOAD_Q16=1)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\move90.v":3)
+Compiling module 'sine_motion(COUNTS_PER_REV=1080,AMPLITUDE_DEG=90,USE_START_ANCHOR=1,IMMEDIATE_STOP=1)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\sine_motion.v":27)
+Compiling module 'position_controller(Kp_pos=32'sb00000000000000000100110011001101,Kd_pos=32'sb00000000000101111101110111010000,THETA_REF_MAX=17'sb00000000000101000,D_FILTER_SHIFT=2,LIMIT_SWITCH_ENABLE=1,THETA_REF_BOOST_MAX=17'sb00000000011001000,LIMIT_POSITION_THRESHOLD=17'sb00000000000110010,LIMIT_BOOST_MIN_MS=500,STARTUP_BOOST_ENABLE=1,STARTUP_BOOST_MAX=17'sb00000000010010110,STARTUP_BOOST_MS=500,DISTURB_LIMIT_MAX=17'sb00000000011001000,USE_Q16_POSITION=1,D_ON_MEASUREMENT=1,Ki_pos=32'sb00000000000000000000000001010000,I_POS_MAX_Q=49'sb0000000000000000000000000000011000000000000000000,I_POS_SEP_THRESHOLD=17'sb00000000000110010)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\PID.v":388)
+Compiling module 'pid_d(Kd=32'sb00000000000101111101110111010000,FILTER_SHIFT=2)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\PID.v":29)
+Compiling module 'pid_i(Ki=32'sb00000000000000000000000001010000,I_MAX=49'sb0000000000000000000000000000011000000000000000000,I_SEP_THRESHOLD=17'sb00000000000110010)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\PID.v":120)
+Compiling module 'pid_adc_controller(KP_Q=32'sb00000000000001100011001100110011,KD_Q=32'sb00000000100010011100011011000000,D_FILTER_SHIFT=2,KI_Q=32'sb00000000000000000000000000000000,I_SEP_THRESHOLD=17'sd40,ERROR_INPUT_LIMIT=17'sd150)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\PID.v":352)
+Compiling module 'pid_controller(KP_Q=32'sb00000000000001100011001100110011,KD_Q=32'sb00000000100010011100011011000000,D_FILTER_SHIFT=2,OUT_MAX_Q=51'sb000000000000000000000000011111010000000000000000000,KI_Q=32'sb00000000000000000000000000000000,I_SEP_THRESHOLD=17'sb00000000000101000,ERROR_INPUT_LIMIT=17'sb00000000010010110)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\PID.v":193)
+Compiling module 'pid_p(Kp=32'sb00000000000001100011001100110011)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\PID.v":1)
+Compiling module 'pid_i(Ki=32'sb00000000000000000000000000000000,I_SEP_THRESHOLD=17'sb00000000000101000)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\PID.v":120)
+Compiling module 'pid_d(Kd=32'sb00000000100010011100011011000000,FILTER_SHIFT=2)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\PID.v":29)
+Compiling module 'motor_pwm(FALL_THRESH=13'sb0001111101000)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\motor_pwm.v":14)
+Compiling module 'adc_v2(OFFSET=12'b011110111100,INVERT=1)'("F:\QQ\pid_test_project\swing_up_shortest_recovery\src\adc_v2.v":18)
+NOTE  (EX0101) : Current top module is "pid_trial"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "F:\QQ\pid_test_project\swing_up_shortest_recovery\impl\gwsynthesis\pid_trial.vg" completed
+[100%] Generate report file "F:\QQ\pid_test_project\swing_up_shortest_recovery\impl\gwsynthesis\pid_trial_syn.rpt.html" completed
+GowinSynthesis finish
+Reading netlist file: "F:\QQ\pid_test_project\swing_up_shortest_recovery\impl\gwsynthesis\pid_trial.vg"
+Parsing netlist file "F:\QQ\pid_test_project\swing_up_shortest_recovery\impl\gwsynthesis\pid_trial.vg" completed
+Processing netlist completed
+Reading constraint file: "F:\QQ\pid_test_project\swing_up_shortest_recovery\src\pid_trial.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "F:\QQ\pid_test_project\swing_up_shortest_recovery\impl\pnr\pid_trial.power.html" completed
+Generate file "F:\QQ\pid_test_project\swing_up_shortest_recovery\impl\pnr\pid_trial.pin.html" completed
+Generate file "F:\QQ\pid_test_project\swing_up_shortest_recovery\impl\pnr\pid_trial.rpt.html" completed
+Generate file "F:\QQ\pid_test_project\swing_up_shortest_recovery\impl\pnr\pid_trial.rpt.txt" completed
+Generate file "F:\QQ\pid_test_project\swing_up_shortest_recovery\impl\pnr\pid_trial.tr.html" completed
+Wed Oct 28 22:31:15 2026
+

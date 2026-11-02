@@ -1,0 +1,7 @@
+{
+  "encoder_counts_per_turn": 1080.0,
+  "adc_counts_per_turn": 4096.0,
+  "center_adc": 1954.0,
+  "blind_low_adc": 100.0,
+  "blind_high_adc": 3990.0
+}

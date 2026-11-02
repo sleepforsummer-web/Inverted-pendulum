@@ -1,0 +1,25 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-55C" pn="GW2A-LV55PG484C8/I7">gw2a55c-005</Device>
+    <FileList>
+        <File path="src/uart_target_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/serial_position.v" type="file.verilog" enable="1"/>
+        <File path="src/disturbance_limit.v" type="file.verilog" enable="1"/>
+        <File path="src/auto_recover.v" type="file.verilog" enable="1"/>
+        <File path="src/shortest_recovery.v" type="file.verilog" enable="1"/>
+        <File path="src/key_press.v" type="file.verilog" enable="1"/>
+        <File path="src/move90.v" type="file.verilog" enable="1"/>
+        <File path="src/sine_motion.v" type="file.verilog" enable="1"/>
+        <File path="src/swing_up.v" type="file.verilog" enable="1"/>
+        <File path="src/PID.v" type="file.verilog" enable="1"/>
+        <File path="src/adc_v2.v" type="file.verilog" enable="1"/>
+        <File path="src/encoder.v" type="file.verilog" enable="1"/>
+        <File path="src/motor_pwm.v" type="file.verilog" enable="1"/>
+        <File path="src/pid_trial.v" type="file.verilog" enable="1"/>
+        <File path="src/pid_trial.cst" type="file.cst" enable="1"/>
+        <File path="src/pid_trial.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
